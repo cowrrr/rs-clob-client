@@ -662,7 +662,7 @@ pub struct BuilderTradeResponse {
     pub size: Decimal,
     pub size_usdc: Decimal,
     pub price: Decimal,
-    pub status: OrderStatusType,
+    pub status: TradeStatusType,
     pub outcome: String,
     pub outcome_index: u32,
     pub owner: ApiKey,

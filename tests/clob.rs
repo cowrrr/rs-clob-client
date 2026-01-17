@@ -2926,11 +2926,12 @@ mod builder_authenticated {
     use alloy::signers::local::LocalSigner;
     use httpmock::Method::DELETE;
     use polymarket_client_sdk::auth::builder::Config as BuilderConfig;
+    use polymarket_client_sdk::clob::types::Side;
+    use polymarket_client_sdk::clob::types::TradeStatusType;
     use polymarket_client_sdk::clob::types::request::TradesRequest;
     use polymarket_client_sdk::clob::types::response::{
         BuilderApiKeyResponse, BuilderTradeResponse, Page,
     };
-    use polymarket_client_sdk::clob::types::{OrderStatusType, Side};
     use polymarket_client_sdk::types::{address, b256};
 
     use super::*;
